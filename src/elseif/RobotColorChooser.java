@@ -13,7 +13,7 @@ public class RobotColorChooser {
 	public static void main(String[] args) {
 		//1. Create a new Robot
 		Robot r2d2=new Robot();
-	for (int i = 9999; i < 9999; i++) {
+	for (int i = 1; i < 5; i++) {
 		
 		//3. Ask the user what color they would like the robot to draw
 	String r =	JOptionPane.showInputDialog("What color would you like?");
@@ -22,10 +22,10 @@ public class RobotColorChooser {
 if (r.equals("red")) {
 	r2d2.setPenColor(Color.red);
 }
-if (r.equals("Green")) {
+if (r.equals("green")) {
 	r2d2.setPenColor(Color.green);
 }
-if (r.equals("Blue")) {
+if (r.equals("blue")) {
 	r2d2.setPenColor(Color.BLUE);
 }
         //6. If the user doesn’t enter anything, choose a random color
