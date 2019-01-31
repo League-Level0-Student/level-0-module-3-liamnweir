@@ -8,32 +8,28 @@ import org.jointheleague.graphical.robot.Robot;
 
 public class obedientRobot {
 public static void main(String[] args) {
-	Robot rob=new Robot();
-	rob.setSpeed(20);
-	rob.miniaturize();
-	rob.setAngle(0);
 	
 
 
 
-JOptionPane.showInputDialog("What color do you want this shape to be; red, green, or blue?");
+
 
 
 String answer=JOptionPane.showInputDialog("What shape do you want? Circle, square or triangle?");
-int shape=Integer.parseInt(answer);
-System.out.println(shape);
 
-if (shape==("circle")) {
+
+
+if ("circle".equals(answer.equalsIgnoreCase(null))) {
 	drawCircle();
 	
 }
 
-if (shape.equals("triangle")) {
+if ("triangle".equals(answer.equalsIgnoreCase(null))) {
 	drawTriangle();
 
 }
 
-if (shape.equals("square")) {
+if ("square".equals(answer.equalsIgnoreCase(null))) {
 	drawSquare();
 
 }
@@ -42,8 +38,20 @@ if (shape.equals("square")) {
 
 
 
-void drawSquare() {
+static void drawSquare() {
+	
 	Robot rob=new Robot();
+	String color=JOptionPane.showInputDialog("What color do you want this shape to be; red, green, or blue?");
+	if ("red".equals(color)) {
+		rob.setPenColor(300, 0, 0);
+	}
+		
+		if ("green".equals(color)) {
+			rob.setPenColor(0, 300, 0);
+		}
+			if ("blue".equals(color)) {
+				rob.setPenColor(0, 0, 300);
+			}
 	rob.setSpeed(20);
 	rob.miniaturize();
 	rob.setAngle(0);
@@ -58,8 +66,19 @@ void drawSquare() {
 	rob.turn(90);
 }
 
-void drawTriangle() {
+static void drawTriangle() {
 	Robot rob=new Robot();
+	String color=JOptionPane.showInputDialog("What color do you want this shape to be; red, green, or blue?");
+	if ("red".equals(color)) {
+		rob.setPenColor(300, 0, 0);
+	}
+		
+		if ("green".equals(color)) {
+			rob.setPenColor(0, 300, 0);
+		}
+			if ("blue".equals(color)) {
+				rob.setPenColor(0, 0, 300);
+			}
 	rob.penDown();
 	rob.setSpeed(20);
 	rob.miniaturize();
@@ -72,8 +91,19 @@ void drawTriangle() {
 	
 }
 
-void drawCircle() {
+static void drawCircle() {
 	Robot rob=new Robot();
+	String color=JOptionPane.showInputDialog("What color do you want this shape to be; red, green, or blue?");
+	if ("red".equals(color)) {
+		rob.setPenColor(300, 0, 0);
+	}
+		
+		if ("green".equals(color)) {
+			rob.setPenColor(0, 300, 0);
+		}
+			if ("blue".equals(color)) {
+				rob.setPenColor(0, 0, 300);
+			}
 	rob.penDown();
 	rob.setSpeed(1000);
 	rob.miniaturize();
