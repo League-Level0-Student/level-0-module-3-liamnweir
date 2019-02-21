@@ -18,7 +18,8 @@ String answer=JOptionPane.showInputDialog("How many shiny objects do you want?")
 		// 3. Play the sound that many times
 System.out.println(answer);
 		// 1. Call the method below
-playMisterZee();
+playMisterZee();	
+}
 	}
 
 	public static void playMisterZee() {
