@@ -21,19 +21,19 @@ public class BirthdayReminder {
 		System.out.println(answer);
 		// 4. if user asked for "mom"
 			//print mom's birthday
-		if () {
+		if (answer.equals(momsBirthday)) {
 			System.out.println("August 26th");
 			System.exit(0);
 		}
 		// 5. if user asked for "dad"
 			// print dad's birthday
-		if () {
+		if (answer.equals(dadsBirthday)) {
 			System.out.println("October 5th");
 			System.exit(0);
 		}
 		// 6. if user asked for your name
 			// print myBirthday
-		if () {
+		if (answer.equals(myBirthday)) {
 			System.out.println("September 10th");
 			System.exit(0);
 		}
